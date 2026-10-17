@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>Alien Glyphs — Preview</title>
+<style>
+@font-face{font-family:'Alien Glyphs';src:url('AlienGlyphs-Regular.woff2') format('woff2')}
+body{background:#000;color:#7CFFB2;font-family:sans-serif;margin:40px}
+h1,.out{font-family:'Alien Glyphs',monospace;text-shadow:0 0 6px #7CFFB2,0 0 18px #2eff8b88,0 0 42px #2eff8b44}
+h1{font-size:64px;letter-spacing:.08em}
+input{width:100%;box-sizing:border-box;background:#061a0e;color:#d8ffe9;border:1px solid #7CFFB2;padding:14px;font-size:20px}
+.out{font-size:56px;line-height:1.5;white-space:pre-wrap;word-break:break-word;margin-top:24px;min-height:200px}
+.small{font-family:'Alien Glyphs';font-size:28px;line-height:1.6}
+</style>
+<h1>ALIEN GLYPHS</h1>
+<input id="t" value="HELLO WORLD 0123456789" autocomplete="off">
+<div class="out" id="o"></div>
+<p class="small">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 !?@#$%&amp;*+-=&lt;&gt;</p>
+<script>const t=document.getElementById('t'),o=document.getElementById('o');const f=()=>o.textContent=t.value; t.addEventListener('input',f); f();</script>
